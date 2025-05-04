@@ -1,0 +1,68 @@
+.Modal_UI {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.Modal_UIContent {
+    padding: 25px;
+    background: white;
+    border-radius: 16px;
+    min-width: 250px;
+
+}
+
+
+.Modal_UI.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cl_btn_close {
+    justify-content: flex-end;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.cl_btn_close:before {
+    content: '+';
+    color: #337AB7;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(45deg);
+    font-size: 50px;
+    line-height: 1;
+    top: -5px;
+    left: 6px;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+.cl_btn_close:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #337AB7;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+    transform: scale(0.01);
+}
+.cl_btn_close:hover:after {
+    transform: scale(0.5);
+}
+.cl_btn_close:hover:before {
+    transform: scale(0.4) rotate(45deg);
+    color: #fff;
+}
