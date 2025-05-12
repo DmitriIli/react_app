@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import Input_UI from './UI/input/Input_UI';
-import Button_UI from './UI/button/Button_UI';
+import Input_UI from './UI/input/InputUI';
+import Button_UI from './UI/button/ButtonUI';
 
 const PostForm = ({ create, setVisible }) => {
 

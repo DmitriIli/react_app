@@ -1,6 +1,6 @@
 import React from 'react';
-import Input_UI from './UI/input/Input_UI';
-import Select_UI from './UI/select/Select_UI';
+import Input_UI from './UI/input/InputUI';
+import Select_UI from './UI/select/SelectUI';
 
 
 

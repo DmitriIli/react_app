@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Select_UI = ({ options, defaultValue, value, onChange }) => {
+const SelectUI = ({ options, defaultValue, value, onChange }) => {
     return (
         <select
             value={value}
@@ -16,4 +16,4 @@ const Select_UI = ({ options, defaultValue, value, onChange }) => {
     );
 };
 
-export default Select_UI;
+export default SelectUI;
